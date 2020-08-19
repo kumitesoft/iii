@@ -3,7 +3,7 @@ const app = require('./app');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000;
 
-mongoose.connect(process.env.MONGO, {
+mongoose.connect('mongodb+srv://marcin100:marcinmarcin100@afi-app.rcqkw.mongodb.net/Afi-app?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
